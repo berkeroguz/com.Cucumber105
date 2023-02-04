@@ -1,4 +1,4 @@
-@wip
+
 Feature: Kullanici yanlis bilgilerle giris yapamaz
 
   Scenario: TC10 Gecerli Kullanici adi ve gecersiz sifre ile negatif login testi

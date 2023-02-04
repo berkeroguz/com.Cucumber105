@@ -82,4 +82,13 @@ public class AmazonStepDefinitions {
         String acutalUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(acutalUrl.contains(arananKelime));
     }
+
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int saniye) {
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

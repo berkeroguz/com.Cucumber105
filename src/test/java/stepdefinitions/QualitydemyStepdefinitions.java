@@ -43,4 +43,16 @@ public class QualitydemyStepdefinitions {
         qualityDemyPage=new QualityDemyPage();
         Assert.assertTrue(qualityDemyPage.kullaniciEmailKutusu.isDisplayed());
     }
+
+    @And("kullanici kutusuna manuel olarak {string} yazar")
+    public void kullaniciKutusunaManuelOlarakYazar(String username) {
+        qualityDemyPage=new QualityDemyPage();
+        qualityDemyPage.kullaniciEmailKutusu.sendKeys(username);
+    }
+
+    @And("password kutusuna manuel olarak {string} yazar")
+    public void passwordKutusunaManuelOlarakYazar(String password) {
+        qualityDemyPage=new QualityDemyPage();
+        qualityDemyPage.passwordKutusu.sendKeys(password);
+    }
 }
