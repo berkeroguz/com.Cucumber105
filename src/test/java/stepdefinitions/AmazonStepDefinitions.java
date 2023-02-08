@@ -91,4 +91,9 @@ public class AmazonStepDefinitions {
             throw new RuntimeException(e);
         }
     }
+
+    @Then("acilan tum sayfalari kapatir")
+    public void acilan_tum_sayfalari_kapatir() {
+       Driver.quitDriver();
+    }
 }
